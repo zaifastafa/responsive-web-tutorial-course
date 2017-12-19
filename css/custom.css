@@ -5,189 +5,229 @@
 * @Last Modified time: 2017-12-07 21:04:25
 */
 
+html, body {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
 body {
-    font-family: 'Quicksand', sans-serif;
-    padding-top: 40px
+  font-family: 'Quicksand', sans-serif;
+  padding-top: 40px;
+  display: flex;
+  flex-direction: column;
+}
+
+#content {
+  flex: 1 0 auto;
 }
 
 ul.nav, .jumbotron h1 {
-    font-family: 'Ranchers', cursive;
+  font-family: 'Ranchers', cursive;
 }
 
 .navbar-inverse {
-    background-color: black;
-    border-color: black;
+  background-color: black;
+  border-color: black;
 }
 
 ul.nav {
-    font-size: 13px;
+  font-size: 13px;
 }
 
 .ranchers {
-    font-family: 'Ranchers', cursive;
+  font-family: 'Ranchers', cursive;
 }
 
 .quicksand {
-    font-family: 'Quicksand', sans-serif;
+  font-family: 'Quicksand', sans-serif;
 }
 
 footer {
-    background-color: #f74c3c;
-    padding-top: 50px;
-    padding-bottom: 30px;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  background-color: #f74c3c;
+  padding-top: 50px;
+  padding-bottom: 30px;
+  color: lightyellow;
 }
 
 #favourites {
-    background-color: #f5f5f5;
+  background-color: #f5f5f5;
 }
 
 #avatar {
-    height: 200px;
-    background-size: cover;
-    background-position: center;
-    border-radius: 50%;
-    width: 200px;
-    object-fit: cover;
-    object-position: top;
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 50%;
+  width: 200px;
+  object-fit: cover;
+  object-position: top;
 }
 
-.jumbotron {
-    text-align: center;
-    background-image: url('../images/hero_image.png');
-    background-color: black;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
-    height: 600px;
-    color: lightyellow;
-    background-size: cover;
-    display: flex;
-    align-items: center;
+.jumbotron.main-header {
+  background-image: url('../images/hero_image.png');
+  background-color: black;
+  background-repeat: no-repeat;
+  /* background-attachment: fixed;
+    background-position: center; */
+  background-size: cover;
+  text-align: center;
+  height: 600px;
+  color: lightyellow;
+  display: flex;
+  align-items: center;
 }
 
 .jumbotron h1 {
-    font-size: 56px;
-    text-shadow: 2px 4px 5px black;
-    margin: auto 70px;
+  font-size: 56px;
+  text-shadow: 2px 4px 5px black;
+  margin: auto 70px;
 }
 
 .jumbotron p {
-    opacity: 1;
-    margin-bottom: 30px;
-    font-weight: 100;
-    padding: 0 50px;
+  opacity: 1;
+  margin-bottom: 30px;
+  font-weight: 100;
+  padding: 0 50px;
 }
 
 .btn-lg {
-    font-size: 28px;
+  font-size: 28px;
 }
 
 .homepage {
-    text-align: center;
-    padding-bottom: 30px;
-    padding-top: 30px;
+  text-align: center;
+  padding-bottom: 30px;
+  padding-top: 30px;
 }
 
 .homepage h2, .homepage h3 {
-    color: #e74c3c;
-    font-family: 'Ranchers', cursive;
-    text-transform: uppercase;
+  color: #e74c3c;
+  font-family: 'Ranchers', cursive;
+  text-transform: uppercase;
 }
 
 .logo {
-    text-transform: uppercase;
-    font-size: 28px;
+  text-transform: uppercase;
+  font-size: 28px;
 }
 
 .homepage h2 {
-    font-size: 30px;
+  font-size: 30px;
 }
 
 .homepage h3 {
-    font-size: 26px;
+  font-size: 26px;
 }
 
 .homepage p {
-    font-size: 21px;
-    font-weight: 300;
+  font-size: 21px;
+  font-weight: 300;
 }
 
 .homepage a {
-    color: #e74c3c;
+  color: #e74c3c;
 }
 
 .homepage a:hover {
-    color: #e74c3c;
-    text-decoration: none;
-    opacity: .8;
+  color: #e74c3c;
+  text-decoration: none;
+  opacity: .8;
 }
 
 .homepage hr {
-    border-top: 1px solid #e74c3d;
-    width: 160px;
-    margin-top: 15px;
+  border-top: 1px solid #e74c3d;
+  width: 160px;
+  margin-top: 15px;
 }
 
 /* Responsive Styling */
 
 @media (max-width: 1199px) {
-
-    .jumbotron h1 {
-        font-size: 56px;
-        margin: auto 50px;
-    }
-
-    .logo {
-        font-size: 20px;
-    }
-
+  .jumbotron.main-header {
+    height: 500px;
+  }
+  .jumbotron h1 {
+    font-size: 56px;
+    margin: auto 50px;
+  }
+  .logo {
+    font-size: 20px;
+  }
 }
 
 @media (max-width: 991px) {
-
-    .jumbotron h1 {
-        font-size: 44px;
-        margin: auto 40px;
-    }
-
-    .jumbotron p {
-        padding: 0 10px;
-    }
-
-    #favourites .col-md-4 {
-        padding-top: 20px;
-        padding-bottom: 20px;
-    }
-
-    .logo {
-        font-size: 18px;
-    }
-
+  .jumbotron.main-header {
+    height: 400px;
+  }
+  .jumbotron h1 {
+    font-size: 44px;
+    margin: auto 40px;
+  }
+  .jumbotron p {
+    padding: 0 10px;
+  }
+  #favourites .col-md-4 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .logo {
+    font-size: 18px;
+  }
 }
 
 @media (max-width: 767px) {
-
-    .jumbotron h1 {
-        font-size: 24px;
-        margin: auto 20px;
-    }
-
-    .jumbotron p {
-        font-size: 16px;
-        padding: 0;
-    }
-
-    .btn-lg {
-        font-size: 18px;
-    }
-
-    .homepage p {
-        font-size: 18px;
-    }
-
-    .logo {
-        font-size: 16px;
-    }
-
+  .jumbotron.main-header {
+    height: 200px;
+  }
+  .jumbotron h1 {
+    font-size: 24px;
+    margin: auto 20px;
+  }
+  .jumbotron p {
+    font-size: 16px;
+    padding: 0;
+  }
+  .btn-lg {
+    font-size: 18px;
+  }
+  .homepage p {
+    font-size: 18px;
+  }
+  .logo {
+    font-size: 16px;
+  }
 }
 
+img.book_list {
+  max-height: 453px;
+}
+
+.book img {
+  max-height: 370px;
+  float: right;
+  padding: 20px 25px;
+}
+
+.book p {
+  padding: 20px 0;
+  text-align: justify;
+  font-size: 18px;
+}
+
+#toTop {
+  position: fixed;
+  border: 0;
+  display: none;
+  background-color: #f74c3c;
+  bottom: 10px;
+  padding: 5px 15px;
+  right: 5px;
+  font-size: 38px;
+}

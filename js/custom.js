@@ -14,3 +14,11 @@ $('.goto').on('click', function () {
         scrollTop: element ? $(element).offset().top - 70 : 0
     }, 1000);
 });
+
+$(window).scroll(function() {
+    if ($(this).scrollTop() > 1024) {
+        $('#toTop').stop(true, true).fadeIn();
+    } else {
+        $('#toTop').stop(true, true).fadeOut();
+    }
+});
