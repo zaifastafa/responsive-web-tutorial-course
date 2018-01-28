@@ -1,16 +1,12 @@
-/*
-* @Author: zaifastafa
-* @Date: 2017-11-23 20:46:01
-* @Last Modified by:   zaifastafa
-* @Last Modified time: 2017-12-07 21:04:25
-*/
-
-html, body {
+html,
+body {
   height: 100%;
   box-sizing: border-box;
 }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: inherit;
 }
 
@@ -25,7 +21,8 @@ body {
   flex: 1 0 auto;
 }
 
-ul.nav, .jumbotron h1 {
+ul.nav,
+.jumbotron h1 {
   font-family: 'Ranchers', cursive;
 }
 
@@ -51,8 +48,7 @@ footer {
   bottom: 0;
   left: 0;
   background-color: #f74c3c;
-  padding-top: 50px;
-  padding-bottom: 30px;
+  padding: 25px 0;
   color: lightyellow;
 }
 
@@ -107,7 +103,8 @@ footer {
   padding-top: 30px;
 }
 
-.homepage h2, .homepage h3 {
+.homepage h2,
+.homepage h3 {
   color: #e74c3c;
   font-family: 'Ranchers', cursive;
   text-transform: uppercase;
@@ -138,7 +135,7 @@ footer {
 .homepage a:hover {
   color: #e74c3c;
   text-decoration: none;
-  opacity: .8;
+  opacity: 0.8;
 }
 
 .homepage hr {
@@ -213,6 +210,14 @@ img.book_list {
   max-height: 370px;
   float: right;
   padding: 20px 25px;
+  border: 10px solid #e74c3d;
+  box-shadow: 1px 1px 2px grey;
+  padding: 0;
+  margin: 10px;
+}
+
+.book h1 {
+  color: #e74c3c;
 }
 
 .book p {
@@ -230,4 +235,20 @@ img.book_list {
   padding: 5px 15px;
   right: 5px;
   font-size: 38px;
+}
+
+/* a {
+  -webkit-transition: width 2s, height 2s, background-color 2s,
+    -webkit-transform 2s;
+  transition: width 2s, height 2s, background-color 2s, transform 2s;
+}
+
+a:hover {
+  background-color: #ffcccc;
+  -webkit-transform: rotate(360deg);
+  transform: rotate(360deg);
+} */
+
+.container.book {
+  margin-top: 80px;
 }
