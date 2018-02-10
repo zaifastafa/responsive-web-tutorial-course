@@ -13,12 +13,11 @@ body {
 body {
   font-family: 'Quicksand', sans-serif;
   padding-top: 40px;
-  display: flex;
-  flex-direction: column;
+  position: relative;
 }
 
 #content {
-  flex: 1 0 auto;
+  padding-bottom: 40px;
 }
 
 ul.nav,
@@ -44,9 +43,6 @@ ul.nav {
 }
 
 footer {
-  width: 100%;
-  bottom: 0;
-  left: 0;
   background-color: #f74c3c;
   padding: 25px 0;
   color: lightyellow;
@@ -70,14 +66,10 @@ footer {
   background-image: url('../images/hero_image.png');
   background-color: black;
   background-repeat: no-repeat;
-  /* background-attachment: fixed;
-    background-position: center; */
   background-size: cover;
   text-align: center;
   height: 600px;
   color: lightyellow;
-  display: flex;
-  align-items: center;
 }
 
 .jumbotron h1 {
