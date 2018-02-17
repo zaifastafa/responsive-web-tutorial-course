@@ -111,13 +111,18 @@
                     commodo consequat.</p>
             </div>
             <div class="container">
+                <div class="row">
+                    <div class="form-group col-sm-6">
+                        <p class="text-muted pull-right text-danger">* fields are required</p>
+                    </div>
+                </div>
                 <form class="form">
                     <div class="row">
                         <div class="form-group col-sm-2">
                             <label>Name: </label>
                         </div>
                         <div class="col-sm-4">
-                            <input type="text" class="form-control">
+                            <input type="text" name="name" placeholder="Enter your full name" required class="form-control">
                         </div>
                     </div>
                     <div class="row">
@@ -125,7 +130,7 @@
                             <label>Email: </label>
                         </div>
                         <div class="col-sm-4">
-                            <input type="email" class="form-control">
+                            <input type="email" name="email" placeholder="Enter your email" required class="form-control">
                         </div>
                     </div>
                     <div class="row">
@@ -133,7 +138,7 @@
                             <label>Message: </label>
                         </div>
                         <div class="col-sm-4">
-                            <textarea class="form-control"></textarea>
+                            <textarea required class="form-control"></textarea>
                         </div>
                     </div>
                     <br/>
@@ -146,12 +151,195 @@
             </div>
         </div>
     </div>
+    <!--footer-->
     <footer class="footer">
         <div class="container">
-            <p class="ranchers logo">Dan Brown</p>
-            Copyright &copy; 2017 Huzaifa Mustafa
+            <div class="row">
+                <!-- row -->
+                <div class="col-lg-4 col-md-4">
+                    <!-- widgets column left -->
+                    <ul class="list-unstyled clear-margins">
+                        <!-- widgets -->
+                        <li class="widget-container widget_nav_menu">
+                            <!-- widgets list -->
+                            <h1 class="title-widget">Useful links</h1>
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa fa-angle-double-right"></i> About Us</a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa fa-angle-double-right"></i> Contact Us</a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa fa-angle-double-right"></i> Success Stories</a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa fa-angle-double-right"></i> PG Courses</a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa fa-angle-double-right"></i> Achiever's Batch</a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa fa-angle-double-right"></i> Regular Batch</a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa fa-angle-double-right"></i> Test & Discussion</a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa fa-angle-double-right"></i> Fast Track T & D</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                </div>
+                <!-- widgets column left end -->
+
+                <div class="col-lg-4 col-md-4">
+                    <!-- widgets column left -->
+                    <ul class="list-unstyled clear-margins">
+                        <!-- widgets -->
+                        <li class="widget-container widget_nav_menu">
+                            <!-- widgets list -->
+                            <h1 class="title-widget">Useful links</h1>
+                            <ul>
+
+                                <li>
+                                    <a href="#">
+                                        <i class="fa fa-angle-double-right"></i> Enquiry Form</a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa fa-angle-double-right"></i> Online Test Series</a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa fa-angle-double-right"></i> Grand Tests Series</a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa fa-angle-double-right"></i> Subject Wise Test Series</a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa fa-angle-double-right"></i> Smart Book</a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa fa-angle-double-right"></i> Test Centres</a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa fa-angle-double-right"></i> Admission Form</a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa fa-angle-double-right"></i> Computer Live Test</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                </div>
+                <!-- widgets column left end -->
+                <div class="col-lg-4 col-md-4">
+                    <!-- widgets column center -->
+                    <ul class="list-unstyled clear-margins">
+                        <!-- widgets -->
+                        <li class="widget-container">
+                            <!-- widgets list -->
+                            <h1 class="title-widget">Contact Detail </h1>
+                            <div class="footerp">
+                                <h2 class="title-median ranchers">Huzaifa Mustafa</h2>
+                                <p>
+                                    <b>Email id:</b>
+                                    <a href="#">info@zaifastafa.com</a>
+                                </p>
+                                <p>
+                                    <b>Helpline Numbers </b>
+                                    +92-333-1234567, +92-333-7654321 </p>
+                                <p>
+                                    <b>Postal Address</b>
+                                    71 Pilgrim Avenue Chevy Chase, MD 20815
+                                </p>
+                                <p>
+                                    <b>Phone Numbers : </b>123879123,
+                                </p>
+                                <p> 021-1234567, 021-11111111</p>
+                            </div>
+                            <div class="social-icons">
+                                <ul class="nomargin">
+                                    <a href="#">
+                                        <i class="fa fa-facebook-square fa-3x social-fb" id="social"></i>
+                                    </a>
+                                    <a href="#">
+                                        <i class="fa fa-twitter-square fa-3x social-tw" id="social"></i>
+                                    </a>
+                                    <a href="#">
+                                        <i class="fa fa-google-plus-square fa-3x social-gp" id="social"></i>
+                                    </a>
+                                    <a href="#">
+                                        <i class="fa fa-envelope fa-3x social-em" id="social"></i>
+                                    </a>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </footer>
+    <!--header-->
+    <div class="footer-bottom">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                    <div class="copyright">
+                        &copy; 2018, Huzaifa Mustafa, All rights reserved
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                    <div class="design">
+                        <a href="#">HM </a> |
+                        <a target="_blank" href="https://www.zaifastafa.com">Responsive Website Design &amp; Development by zaifastafa</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <footer class="footer">
+        <div class="container">
+            <div class="pull-left">
+                <p class="ranchers logo">Dan Brown</p>
+                Copyright &copy; 2017 Huzaifa Mustafa
+            </div>
+            <div class="social-icons pull-right">
+                <a href="#">
+                    <i class="fa fa-facebook"></i>
+                </a>
+                <a href="#">
+                    <i class="fa fa-twitter"></i>
+                </a>
+                <a href="#">
+                    <i class="fa fa-linkedin"></i>
+                </a>
+                <a href="#">
+                    <i class="fa fa-google-plus"></i>
+                </a>
+                <a href="#">
+                    <i class="fa fa-skype"></i>
+                </a>
+            </div>
+        </div>
+    </footer> -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/custom.js"></script>
